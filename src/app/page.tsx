@@ -175,7 +175,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
       >
-        <span>SIH 26002</span>
+        <span>NER-SAFE</span>
         <span>•</span>
         <span>GIS · AI · OFFLINE-FIRST</span>
       </motion.footer>
