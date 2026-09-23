@@ -1,69 +1,184 @@
-import Image from "next/image";
+"use client";
+
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "@/components/language/LanguageSwitcher";
+
+import {
+  ArrowRight,
+  ShieldCheck,
+  Radio,
+  Map,
+  Mic,
+} from "lucide-react";
+
+import { getHealth } from "@/lib/api/health";
 
 export default function Home() {
+  const router = useRouter();
+  const { t } = useLanguage();
+
+  const [systemOnline, setSystemOnline] = useState(false);
+
+  useEffect(() => {
+    const checkHealth = async () => {
+      try {
+        await getHealth();
+        setSystemOnline(true);
+      } catch {
+        setSystemOnline(false);
+      }
+    };
+
+    // Check immediately
+    checkHealth();
+
+    // Check every 5 seconds
+    const interval = setInterval(checkHealth, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="landing-page">
+      {/* Background glow */}
+      <div className="background-glow background-glow-one" />
+      <div className="background-glow background-glow-two" />
+
+      {/* Top status bar */}
+      <motion.header
+        className="top-bar"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="brand">
+          <div className="brand-mark">
+            <ShieldCheck size={20} />
+          </div>
+
+          <div>
+            <div className="brand-name">NER-SAFE</div>
+
+            <div className="brand-subtitle">
+              {t.landing.brandSubtitle}
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+
+        <div className="landing-header-actions">
+          <LanguageSwitcher variant="landing" />
+
+          <div className="system-status">
+            <span
+              className={`status-dot ${
+                systemOnline ? "" : "status-dot-offline"
+              }`}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+            {systemOnline
+              ? t.landing.systemOnline
+              : "Backend Offline"}
+          </div>
         </div>
-      </main>
-    </div>
+      </motion.header>
+
+      {/* Main content */}
+      <section className="hero">
+        <motion.div
+          className="hero-badge"
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+        >
+          <Radio size={15} />
+          {t.landing.liveNetwork}
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
+          {t.landing.heroTitleLine1}
+          <br />
+          <span>{t.landing.heroTitleLine2}</span>
+        </motion.h1>
+
+        <motion.p
+          className="hero-description"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.45, duration: 0.6 }}
+        >
+          {t.landing.heroDescription}
+        </motion.p>
+
+        {/* Feature cards */}
+        <motion.div
+          className="feature-grid"
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.7 }}
+        >
+          <div className="glass feature-card">
+            <Map size={22} />
+
+            <div>
+              <h3>{t.landing.features.routeTitle}</h3>
+              <p>{t.landing.features.routeDescription}</p>
+            </div>
+          </div>
+
+          <div className="glass feature-card">
+            <ShieldCheck size={22} />
+
+            <div>
+              <h3>{t.landing.features.riskTitle}</h3>
+              <p>{t.landing.features.riskDescription}</p>
+            </div>
+          </div>
+
+          <div className="glass feature-card">
+            <Mic size={22} />
+
+            <div>
+              <h3>Voice Assistance</h3>
+              <p>
+                Interact with the system using regional languages.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Enter button */}
+        <motion.button
+          className="enter-button"
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.8, duration: 0.5 }}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => router.push("/login")}
+        >
+          {t.landing.enterCommandCentre}
+          <ArrowRight size={18} />
+        </motion.button>
+      </section>
+
+      {/* Bottom information */}
+      <motion.footer
+        className="bottom-bar"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.8 }}
+      >
+        <span>SIH 26002</span>
+        <span>•</span>
+        <span>GIS · AI · OFFLINE-FIRST</span>
+      </motion.footer>
+    </main>
   );
 }

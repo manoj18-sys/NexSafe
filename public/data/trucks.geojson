@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "truckId": "TRK-001",
+        "status": "Moving",
+        "speed": 42
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.82,
+          25.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "truckId": "TRK-002",
+        "status": "Moving",
+        "speed": 35
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.38,
+          25.4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "truckId": "TRK-003",
+        "status": "Stopped",
+        "speed": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.2,
+          24.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "truckId": "TRK-004",
+        "status": "Moving",
+        "speed": 48
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.05,
+          26.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "truckId": "TRK-005",
+        "status": "Moving",
+        "speed": 31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.82,
+          25.3
+        ]
+      }
+    }
+  ]
+}

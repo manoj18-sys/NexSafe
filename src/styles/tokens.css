@@ -1,0 +1,122 @@
+:root {
+  /* =====================================================
+     NER-SAFE DESIGN SYSTEM
+     Global Design Tokens
+     ===================================================== */
+
+  /* ---------- Backgrounds ---------- */
+
+  --color-bg-primary: #05070a;
+  --color-bg-secondary: #0a0e13;
+  --color-bg-tertiary: #10161d;
+
+  --color-surface: rgba(255, 255, 255, 0.045);
+  --color-surface-hover: rgba(255, 255, 255, 0.075);
+  --color-surface-strong: rgba(255, 255, 255, 0.09);
+
+  /* ---------- Borders ---------- */
+
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-hover: rgba(255, 255, 255, 0.18);
+
+  /* ---------- Text ---------- */
+
+  --color-text-primary: #f5f7fa;
+  --color-text-secondary: #a8b0bb;
+  --color-text-muted: #68717d;
+
+  /* ---------- Accent ---------- */
+
+  --color-accent: #65e6a5;
+  --color-accent-hover: #82efb7;
+  --color-accent-muted: rgba(101, 230, 165, 0.14);
+
+  /* ---------- Status ---------- */
+
+  --color-success: #65e6a5;
+  --color-warning: #f5c451;
+  --color-danger: #ff5c6c;
+  --color-info: #5da9ff;
+
+  /* ---------- Risk Levels ---------- */
+
+  --risk-stable: #65e6a5;
+  --risk-watch: #f5c451;
+  --risk-critical: #ff5c6c;
+
+  /* ---------- Shadows ---------- */
+
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  --shadow-md:
+    0 12px 40px rgba(0, 0, 0, 0.28);
+
+  --shadow-lg:
+    0 24px 80px rgba(0, 0, 0, 0.4);
+
+  /* ---------- Border Radius ---------- */
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* ---------- Spacing ---------- */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ---------- Typography ---------- */
+
+  --font-size-xs: 11px;
+  --font-size-sm: 13px;
+  --font-size-md: 15px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 44px;
+
+  /* ---------- Layout ---------- */
+
+  --sidebar-width: 250px;
+  --navbar-height: 68px;
+
+  /* ---------- Motion ---------- */
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 500ms;
+
+  --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* =====================================================
+   NER-SAFE TYPOGRAPHY
+   ===================================================== */
+
+body {
+  font-size: 15px;
+}
+
+/* Dashboard main heading */
+h1 {
+  font-size: 48px;
+}
+
+/* Dashboard secondary text */
+p {
+  font-size: 15px;
+}
+
+/* Improve readability of small interface text */
+button {
+  font-size: 14px;
+}

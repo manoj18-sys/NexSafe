@@ -1,0 +1,292 @@
+/* =====================================================
+   NER-SAFE
+   STARTUP LOADER
+   ===================================================== */
+
+.startup-loader {
+  position: fixed;
+  inset: 0;
+
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(28, 65, 55, 0.2),
+      transparent 34%
+    ),
+    #030708;
+
+  color: #ffffff;
+}
+
+.startup-loader-glow {
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius: 50%;
+
+  background: rgba(76, 255, 181, 0.06);
+
+  filter: blur(90px);
+
+  pointer-events: none;
+}
+
+.startup-loader-grid {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.13;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.055) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.055) 1px,
+      transparent 1px
+    );
+
+  background-size: 54px 54px;
+
+  mask-image:
+    radial-gradient(
+      ellipse at center,
+      black 0%,
+      transparent 72%
+    );
+
+  pointer-events: none;
+}
+
+.startup-loader-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(420px, calc(100% - 48px));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* Logo */
+
+.startup-logo {
+  position: relative;
+
+  width: 92px;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+}
+
+.startup-logo-ring {
+  position: absolute;
+  inset: 0;
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(76, 255, 181, 0.38);
+
+  border-top-color: rgba(76, 255, 181, 0.95);
+  border-right-color: rgba(76, 255, 181, 0.15);
+
+  box-shadow:
+    0 0 35px rgba(76, 255, 181, 0.08);
+
+  transform: rotate(45deg);
+}
+
+.startup-logo-inner {
+  width: 66px;
+  height: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 21px;
+
+  border: 1px solid rgba(76, 255, 181, 0.25);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(18, 43, 36, 0.95),
+      rgba(6, 14, 14, 0.98)
+    );
+
+  color: #4cffb5;
+
+  box-shadow:
+    inset 0 0 25px rgba(76, 255, 181, 0.04),
+    0 14px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* Brand */
+
+.startup-brand h1 {
+  margin: 0;
+
+  font-size: clamp(32px, 6vw, 48px);
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  line-height: 1;
+}
+
+.startup-brand span {
+  display: block;
+
+  margin-top: 11px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.24em;
+
+  color: rgba(255, 255, 255, 0.42);
+}
+
+/* Progress */
+
+.startup-progress-track {
+  width: min(260px, 72%);
+
+  height: 2px;
+
+  margin-top: 42px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.startup-progress {
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #4cffb5;
+
+  box-shadow:
+    0 0 12px rgba(76, 255, 181, 0.65);
+}
+
+/* Status */
+
+.startup-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 16px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.startup-status-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #4cffb5;
+
+  box-shadow:
+    0 0 10px rgba(76, 255, 181, 0.75);
+}
+
+/* Corners */
+
+.startup-corner {
+  position: absolute;
+
+  z-index: 3;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.22);
+}
+
+.startup-corner-tl {
+  top: 28px;
+  left: 30px;
+}
+
+.startup-corner-br {
+  right: 30px;
+  bottom: 28px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .startup-logo {
+    width: 78px;
+    height: 78px;
+  }
+
+  .startup-logo-inner {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 18px;
+  }
+
+  .startup-brand h1 {
+    font-size: 32px;
+  }
+
+  .startup-brand span {
+    font-size: 8px;
+    letter-spacing: 0.18em;
+  }
+
+  .startup-corner {
+    font-size: 8px;
+  }
+
+  .startup-corner-tl {
+    top: 20px;
+    left: 20px;
+  }
+
+  .startup-corner-br {
+    right: 20px;
+    bottom: 20px;
+  }
+}

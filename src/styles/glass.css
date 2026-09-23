@@ -1,0 +1,91 @@
+/* =====================================================
+   NER-SAFE GLASSMORPHISM SYSTEM
+   ===================================================== */
+
+.glass {
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow: var(--shadow-md);
+
+  border-radius: var(--radius-lg);
+
+  transition:
+    background var(--duration-normal) var(--ease-standard),
+    border-color var(--duration-normal) var(--ease-standard),
+    transform var(--duration-normal) var(--ease-standard),
+    box-shadow var(--duration-normal) var(--ease-standard);
+}
+
+.glass:hover {
+  background: var(--color-surface-hover);
+
+  border-color: var(--color-border-hover);
+
+  box-shadow: var(--shadow-lg);
+}
+
+.glass-strong {
+  background: var(--color-surface-strong);
+
+  border: 1px solid var(--color-border);
+
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+
+  box-shadow: var(--shadow-lg);
+
+  border-radius: var(--radius-lg);
+}
+
+.glass-panel {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: var(--radius-md);
+
+  transition:
+    background var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard);
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.09);
+
+  border-color: rgba(255, 255, 255, 0.18);
+
+  transform: translateY(-1px);
+}
+
+.glass-button:active {
+  transform: translateY(0);
+}

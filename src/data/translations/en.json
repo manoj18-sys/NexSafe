@@ -1,0 +1,586 @@
+{
+  "landing": {
+    "brandSubtitle": "Intelligent Route Safety System",
+    "systemOnline": "SYSTEM ONLINE",
+    "liveNetwork": "NORTHEAST INDIA · LIVE SAFETY NETWORK",
+    "heroTitleLine1": "Safer routes.",
+    "heroTitleLine2": "Smarter journeys.",
+    "heroDescription": "An intelligent logistics safety platform that monitors hazards, evaluates routes, and helps identify safer alternatives across the Northeast.",
+    "features": {
+      "routeTitle": "Live Route Intelligence",
+      "routeDescription": "Monitor route conditions and identify potential hazards.",
+      "riskTitle": "Risk-Aware Routing",
+      "riskDescription": "Evaluate hazards and identify alternate safe routes.",
+      "voiceTitle": "Voice Assistance",
+      "voiceDescription": "Interact with the system using regional languages."
+    },
+    "enterCommandCentre": "Enter Command Centre",
+    "footer": {
+      "sih": "SIH 26002",
+      "technology": "GIS · AI · OFFLINE-FIRST"
+    }
+  },
+
+  "login": {
+    "brandSubtitle": "Intelligent Route Safety System",
+    "secureSession": "SECURE SESSION",
+
+    "eyebrow": "COMMAND CENTRE ACCESS",
+    "title": "Welcome to NER-SAFE",
+    "description": "Select your role and enter your details to personalize your safety experience.",
+
+    "role": {
+      "label": "SELECT YOUR ROLE",
+
+      "citizen": {
+        "name": "Citizen",
+        "description": "Personal travel and route safety"
+      },
+
+      "driver": {
+        "name": "Driver",
+        "description": "Vehicle and shipment-aware routing"
+      },
+
+      "authority": {
+        "name": "Authority",
+        "description": "Emergency monitoring and simulation"
+      }
+    },
+
+    "form": {
+      "fullName": "FULL NAME",
+      "fullNamePlaceholder": "Enter your full name",
+
+      "mobileNumber": "MOBILE NUMBER",
+      "mobileNumberPlaceholder": "Enter mobile number",
+
+      "operatingArea": "OPERATING AREA",
+      "currentLocation": "CURRENT / STARTING LOCATION",
+
+      "operatingAreaPlaceholder": "Enter your operating area",
+      "locationPlaceholder": "Enter your location"
+    },
+
+    "driver": {
+      "title": "Vehicle & Shipment",
+      "description": "Used to calculate route suitability",
+
+      "vehicleType": "VEHICLE TYPE",
+
+      "wheel6": "6 Wheel",
+      "wheel10": "10 Wheel",
+      "wheel12": "12 Wheel",
+      "wheel14": "14 Wheel",
+      "wheel18": "18 Wheel",
+      "wheel22": "22 Wheel",
+
+      "shipmentType": "SHIPMENT TYPE",
+      "shipmentPlaceholder": "Select shipment type",
+
+      "generalCargo": "General Cargo",
+      "foodPerishable": "Food / Perishable",
+      "medicalSupplies": "Medical Supplies",
+      "constructionMaterial": "Construction Material",
+      "industrialGoods": "Industrial Goods",
+      "other": "Other",
+
+      "shipmentDetails": "SHIPMENT DETAILS",
+      "optional": "OPTIONAL",
+      "shipmentDetailsPlaceholder": "Describe your cargo if needed...",
+
+      "info": "Vehicle size and shipment type will help determine suitable roads, restrictions and safer alternatives."
+    },
+
+    "actions": {
+      "continue": "Continue",
+      "continueToCommandCentre": "Continue to Command Centre"
+    },
+
+    "privacy": "Your information is used to personalize route safety and emergency assistance.",
+
+    "footer": {
+      "sih": "SIH 26002",
+      "technology": "GIS · AI · OFFLINE-FIRST"
+    }
+  },
+ "dashboard": {
+  "eyebrow": "NER-SAFE / COMMAND CENTRE",
+  "title": "Operations Dashboard",
+  "description": "Real-time route intelligence, hazard monitoring, and logistics safety overview.",
+  "liveSystem": "LIVE SYSTEM",
+  "kpi": {
+    "activeRoutes": "ACTIVE ROUTES",
+    "fromLastHour": "from last hour",
+    "safeCorridors": "SAFE CORRIDORS",
+    "corridorsMonitored": "corridors monitored",
+    "criticalHazards": "CRITICAL HAZARDS",
+    "requiringAttention": "requiring attention",
+    "vehiclesTracked": "VEHICLES TRACKED",
+    "activeVehicles": "active vehicles",
+    "stable": "Stable",
+    "new": "new"
+  },
+  "routeMap": {
+  "title": "LIVE ROUTE INTELLIGENCE",
+  "description": "Northeast India safety corridor overview",
+  "live": "LIVE",
+  "liveGisFeed": "LIVE GIS FEED",
+  "vehiclesTracked": "18 vehicles tracked",
+  "stable": "Stable",
+  "watch": "Watch",
+  "critical": "Critical"
+},
+"alerts": {
+  "title": "CRITICAL ALERTS",
+  "description": "Latest route safety events",
+  "landslideDetected": "Landslide detected",
+  "roadBlockage": "Road blockage reported",
+  "routeRestored": "Route restored",
+  "viewAllHazards": "View all hazards →",
+  "ago": "ago"
+}
+},
+"route": {
+  "eyebrow": "NER-SAFE / ROUTE INTELLIGENCE",
+  "title": "Risk-Aware Routing",
+  "description": "Analyze route conditions and identify safer alternatives across the Northeast.",
+  "liveSystem": "LIVE SYSTEM",
+
+  "search": {
+    "eyebrow": "ROUTE PLANNING",
+    "title": "Find a safer route",
+    "description": "Enter your origin and destination to analyze route safety.",
+    "from": "FROM",
+    "to": "TO",
+    "fromPlaceholder": "Enter starting location",
+    "toPlaceholder": "Enter destination",
+    "analyze": "Analyze Route"
+  },
+
+  "summary": {
+    "eyebrow": "RECOMMENDED ROUTE",
+    "safeRoute": "SAFE ROUTE",
+    "distance": "Distance",
+    "estimatedTime": "Estimated time",
+    "riskLevel": "Risk level",
+    "corridorHealth": "Corridor health",
+    "stable": "Stable",
+    "low": "LOW",
+    "useThisRoute": "Use this route"
+  },
+
+  "risk": {
+    "eyebrow": "RISK ANALYSIS",
+    "title": "Route safety factors",
+    "weather": "Weather",
+    "weatherDescription": "Normal conditions",
+    "landslide": "Landslide",
+    "landslideDescription": "Monitoring required",
+    "roadCondition": "Road condition",
+    "roadConditionDescription": "Route operational",
+    "blockage": "Blockage",
+    "blockageDescription": "Potential disruption",
+    "low": "LOW",
+    "moderate": "MODERATE",
+    "high": "HIGH"
+  },
+
+  "alternate": {
+    "eyebrow": "ALTERNATE ROUTE",
+    "title": "Safer corridor available",
+    "origin": "Origin",
+    "safeCorridor": "Safe corridor",
+    "destination": "Destination",
+    "lowRisk": "LOW RISK",
+    "select": "Select alternate route"
+  },
+
+  "safeHarbor": {
+    "eyebrow": "SAFE ZONE",
+    "title": "Safe harbor identified",
+    "description": "If no viable alternate route is available, vehicles can be directed to the nearest designated safe zone.",
+    "location": "Nongpoh Emergency Safe Zone",
+    "viewZone": "View zone"
+  }
+},
+"hazards": {
+  "eyebrow": "NER-SAFE / HAZARD MONITOR",
+  "title": "Hazard Monitor",
+  "description": "Monitor live route hazards and identify disruptions across the Northeast.",
+  "liveSystem": "LIVE SYSTEM",
+
+  "overview": {
+    "activeHazards": "Active hazards",
+    "landslideZones": "Landslide zones",
+    "weatherAlerts": "Weather alerts",
+    "routesAffected": "Routes affected"
+  },
+
+  "list": {
+    "eyebrow": "LIVE HAZARDS",
+    "title": "Current safety events",
+    "description": "Recent hazard reports affecting monitored corridors.",
+    "live": "LIVE"
+  },
+
+  "items": {
+    "landslide": {
+      "title": "Landslide detected"
+    },
+    "blockage": {
+      "title": "Road blockage reported"
+    },
+    "rainfall": {
+      "title": "Heavy rainfall"
+    },
+    "restored": {
+      "title": "Route restored"
+    }
+  },
+
+  "severity": {
+    "critical": "Critical",
+    "warning": "Warning",
+    "safe": "Safe"
+  },
+
+  "timeAgo": "{value} min ago",
+
+  "reporting": {
+    "eyebrow": "FIELD REPORTING",
+    "title": "Report a hazard",
+    "description": "Drivers can report landslides, accidents, blockages, or other route disruptions.",
+    "addPhoto": "Add photo",
+    "voiceReport": "Voice report",
+    "reportHazard": "Report hazard"
+  },
+  "detail": {
+  "eyebrow": "SELECTED INCIDENT",
+  "title": "Landslide detected",
+  "description": "Critical hazard affecting the monitored corridor.",
+  "critical": "CRITICAL",
+
+  "info": {
+    "location": {
+      "label": "LOCATION"
+    },
+    "impact": {
+      "label": "IMPACT",
+      "value": "Route disruption detected"
+    },
+    "response": {
+      "label": "RESPONSE",
+      "value": "Rerouting recommended"
+    }
+  },
+
+  "actions": {
+    "analyze": "Analyze alternate route",
+    "resolve": "Mark as resolved"
+  }
+}
+},
+"report": {
+  "eyebrow": "NER-SAFE / FIELD REPORTING",
+  "title": "Report a Hazard",
+  "description": "Submit a live hazard report to help protect vehicles and identify safer routes.",
+  "liveSystem": "LIVE SYSTEM",
+
+  "incident": {
+    "eyebrow": "INCIDENT DETAILS",
+    "title": "Describe the hazard",
+    "description": "Provide the information needed to assess the incident and update route safety."
+  },
+
+  "fields": {
+    "hazardType": "HAZARD TYPE",
+    "severity": "SEVERITY",
+    "location": "LOCATION",
+    "description": "DESCRIPTION",
+    "optional": "OPTIONAL",
+    "descriptionPlaceholder": "Describe what you see, the road condition, or any immediate danger..."
+  },
+
+  "hazardTypes": {
+    "landslide": "Landslide",
+    "blockage": "Road blockage",
+    "accident": "Accident",
+    "weather": "Weather",
+    "roadDamage": "Road damage",
+    "other": "Other"
+  },
+
+  "severity": {
+    "low": "Low",
+    "moderate": "Moderate",
+    "high": "High",
+    "critical": "Critical"
+  },
+
+  "location": {
+    "detected": "Location available for this report",
+    "useGps": "Use GPS"
+  },
+
+  "media": {
+    "eyebrow": "EVIDENCE",
+    "title": "Add media",
+    "addPhoto": "Add a photo",
+    "photoHint": "Upload an image of the hazard",
+    "choosePhoto": "Choose photo",
+    "photoAdded": "Photo attached",
+    "voiceReport": "Record voice report",
+    "stopRecording": "Stop recording",
+    "recording": "Recording",
+    "optional": "Optional"
+  },
+
+  "safety": {
+    "title": "Help keep routes safe",
+    "description": "Your report can help the system identify disruptions and recommend safer alternatives."
+  },
+
+  "actions": {
+    "submit": "Submit hazard report"
+  },
+
+  "offline": "Report can be queued when offline",
+
+  "success": {
+    "title": "Hazard report submitted",
+    "description": "The incident has been added to the safety reporting queue."
+  }
+},
+"safeZones": {
+  "header": {
+    "eyebrow": "NER-SAFE / SAFE ZONES",
+    "title": "Safe Zones",
+    "description": "Find designated safe areas for vehicles during route disruptions and emergencies.",
+    "live": "LIVE SYSTEM"
+  },
+  "kpi": {
+    "active": "Active safe zones",
+    "available": "Available now",
+    "limited": "Limited capacity",
+    "network": "Network status",
+    "online": "ONLINE"
+  },
+  "map": {
+    "title": "Safe Zone Network",
+    "description": "Overview of designated safe zones across the Northeast.",
+    "connected": "CONNECTED",
+    "assam": "ASSAM",
+    "meghalaya": "MEGHALAYA",
+    "sikkim": "SIKKIM"
+  },
+  "list": {
+    "title": "Designated safe zones",
+    "description": "Nearby locations available for emergency diversion and temporary shelter."
+  },
+  "card": {
+    "status": {
+      "available": "AVAILABLE",
+      "limited": "LIMITED CAPACITY",
+      "full": "FULL"
+    },
+    "distance": "Distance",
+    "elevation": "Elevation",
+    "occupancy": "Occupancy",
+    "capacity": "Capacity",
+    "navigate": "Navigate to safe zone"
+  }
+},
+"emergency": {
+  "header": {
+    "eyebrow": "NER-SAFE / EMERGENCY RESPONSE",
+    "title": "Emergency Command",
+    "description": "Monitor active incidents and coordinate emergency response across the Northeast.",
+    "live": "LIVE SYSTEM"
+  },
+
+  "overview": {
+    "activeIncidents": {
+      "label": "ACTIVE INCIDENTS",
+      "description": "Currently being monitored"
+    },
+    "criticalEvents": {
+      "label": "CRITICAL EVENTS",
+      "description": "Immediate attention required"
+    },
+    "responseTeams": {
+      "label": "RESPONSE TEAMS",
+      "description": "Teams currently available"
+    },
+    "safeZones": {
+      "label": "SAFE ZONES",
+      "description": "Designated zones available"
+    }
+  },
+
+  "incidents": {
+    "eyebrow": "ACTIVE INCIDENTS",
+    "title": "Emergency events",
+    "description": "Incidents currently requiring monitoring or response.",
+    "viewAll": "View all incidents",
+
+    "roadBlockage": {
+      "title": "Road blockage reported",
+      "location": "NH-6 · Nongpoh",
+      "time": "12 min ago",
+      "status": "CRITICAL",
+      "description": "Partial road obstruction reported on the corridor."
+    },
+
+    "landslide": {
+      "title": "Landslide monitoring",
+      "location": "Shillong bypass",
+      "time": "28 min ago",
+      "status": "MONITORING",
+      "description": "Ground movement is being monitored by response teams."
+    },
+
+    "vehicleAssistance": {
+      "title": "Vehicle assistance requested",
+      "location": "Guwahati corridor",
+      "time": "41 min ago",
+      "status": "ACTIVE",
+      "description": "Emergency assistance has been dispatched."
+    }
+  },
+
+  "response": {
+    "eyebrow": "RESPONSE STATUS",
+    "title": "Emergency readiness",
+    "description": "Current response capacity across monitored areas.",
+
+    "teams": {
+      "label": "Response teams",
+      "description": "Teams available"
+    },
+
+    "average": {
+      "label": "Average response",
+      "description": "Current response time"
+    },
+
+    "locations": {
+      "label": "Active locations",
+      "description": "Response areas"
+    },
+
+    "system": {
+      "label": "System status",
+      "value": "READY",
+      "description": "Emergency network operational"
+    },
+
+    "operational": "RESPONSE NETWORK OPERATIONAL"
+  },
+
+  "contacts": {
+    "eyebrow": "EMERGENCY SUPPORT",
+    "title": "Response contacts",
+    "description": "Access emergency coordination and response support.",
+
+    "eoc": {
+      "title": "Emergency Operations Center",
+      "description": "Central coordination and incident escalation.",
+      "action": "Contact EOC"
+    },
+
+    "team": {
+      "title": "Regional Response Team",
+      "description": "Connect with the nearest available response team.",
+      "action": "Contact team"
+    }
+  }
+},
+"history": {
+  "header": {
+    "eyebrow": "NER-SAFE / ACTIVITY HISTORY",
+    "title": "Operational History",
+    "description": "Review route decisions, hazard events, shipment activity, and emergency responses.",
+    "badge": "SYSTEM LOG"
+  },
+
+  "overview": {
+    "totalEvents": "Total events",
+    "reroutes": "Reroutes",
+    "hazardsResolved": "Hazards resolved",
+    "emergencyResponses": "Emergency responses"
+  },
+
+  "filters": {
+    "searchPlaceholder": "Search history...",
+    "eventType": "Event type",
+    "timePeriod": "Time period",
+    "allEvents": "All events",
+    "reroutes": "Reroutes",
+    "hazards": "Hazards",
+    "shipments": "Shipments",
+    "reports": "Reports",
+    "emergency": "Emergency",
+    "routeAnalysis": "Route analysis",
+    "allTime": "All time",
+    "today": "Today",
+    "last7Days": "Last 7 days",
+    "last30Days": "Last 30 days"
+  },
+
+  "list": {
+    "eyebrow": "ACTIVITY LOG",
+    "title": "Operational history",
+    "description": "Recent events recorded across the NER-SAFE network.",
+    "records": "RECORDS",
+    "view": "View"
+  },
+
+  "types": {
+    "REROUTE": "Reroute",
+    "HAZARD": "Hazard",
+    "SHIPMENT": "Shipment",
+    "REPORT": "Report",
+    "EMERGENCY": "Emergency",
+    "ROUTE": "Route analysis"
+  },
+
+  "status": {
+    "RESOLVED": "Resolved",
+    "COMPLETED": "Completed",
+    "ACTIVE": "Active",
+    "PENDING": "Pending",
+    "MONITORING": "Monitoring"
+  },
+
+  "detail": {
+    "eyebrow": "SELECTED EVENT",
+    "title": "Emergency rerouting initiated",
+    "description": "Operational response recorded by NER-SAFE.",
+    "referenceLabel": "EVENT REFERENCE",
+    "locationLabel": "LOCATION",
+    "actionLabel": "ACTION",
+    "resultLabel": "RESULT",
+    "location": "NH-10 · Sikkim Corridor",
+    "action": "Emergency rerouting",
+    "result": "Alternate route assigned",
+    "date": "21 Sep 2026 · 10:42 AM",
+    "viewFullEvent": "View full event"
+  }
+},
+"settings": {
+  "header": {
+    "eyebrow": "NER-SAFE / SETTINGS",
+    "title": "Settings",
+    "description": "View system preferences and configuration information.",
+    "badge": "SYSTEM CONFIGURATION"
+  },
+  "language": {
+    "eyebrow": "LANGUAGE SYSTEM",
+    "title": "Supported Languages",
+    "description": "NER-SAFE supports the following languages across the platform.",
+    "supported": "SUPPORTED",
+    "note": "Language selection is managed from the main language control."
+  }
+}
+}

@@ -1,0 +1,171 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C01",
+        "name": "Guwahati - Shillong Corridor",
+        "status": "stable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.7362,
+            26.1445
+          ],
+          [
+            91.78,
+            26.02
+          ],
+          [
+            91.82,
+            25.85
+          ],
+          [
+            91.8933,
+            25.5788
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C02",
+        "name": "Guwahati - Silchar Corridor",
+        "status": "watch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.7362,
+            26.1445
+          ],
+          [
+            92,
+            25.9
+          ],
+          [
+            92.3,
+            25.5
+          ],
+          [
+            92.7789,
+            24.8333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C03",
+        "name": "Shillong - Imphal Corridor",
+        "status": "critical"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.8933,
+            25.5788
+          ],
+          [
+            92.3,
+            25.4
+          ],
+          [
+            92.8,
+            25.1
+          ],
+          [
+            93.3,
+            24.9
+          ],
+          [
+            93.9368,
+            24.817
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C04",
+        "name": "Guwahati - Tezpur Corridor",
+        "status": "stable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.7362,
+            26.1445
+          ],
+          [
+            92.15,
+            26.35
+          ],
+          [
+            92.7789,
+            26.6528
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C05",
+        "name": "Imphal - Dimapur Corridor",
+        "status": "watch"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            93.9368,
+            24.817
+          ],
+          [
+            93.85,
+            25.15
+          ],
+          [
+            93.7266,
+            25.9044
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "C06",
+        "name": "Agartala - Aizawl Corridor",
+        "status": "stable"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.2868,
+            23.8315
+          ],
+          [
+            91.8,
+            23.8
+          ],
+          [
+            92.7176,
+            23.7271
+          ]
+        ]
+      }
+    }
+  ]
+}

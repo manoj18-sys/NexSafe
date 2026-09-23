@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SZ01",
+        "name": "Guwahati Safe Harbor",
+        "elevation": 55,
+        "type": "Safe Harbor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7362,
+          26.1445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SZ02",
+        "name": "Silchar Safe Harbor",
+        "elevation": 22,
+        "type": "Safe Harbor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.7789,
+          24.8333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SZ03",
+        "name": "Dimapur Safe Harbor",
+        "elevation": 195,
+        "type": "Safe Harbor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.7266,
+          25.9044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SZ04",
+        "name": "Agartala Safe Harbor",
+        "elevation": 16,
+        "type": "Safe Harbor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.2868,
+          23.8315
+        ]
+      }
+    }
+  ]
+}

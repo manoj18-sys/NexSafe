@@ -1,0 +1,39 @@
+/* =====================================================
+   NER-SAFE APPLICATION SHELL
+   ===================================================== */
+
+.app-shell {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 70% 10%,
+      rgba(101, 230, 165, 0.035),
+      transparent 35%
+    ),
+    var(--color-background);
+}
+
+.app-main {
+  min-height: 100vh;
+
+  margin-left: 250px;
+}
+
+.app-content {
+  min-height: calc(100vh - 72px);
+
+  padding: 26px;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 900px) {
+  .app-main {
+    margin-left: 72px;
+  }
+
+  .app-content {
+    padding: 18px;
+  }
+}

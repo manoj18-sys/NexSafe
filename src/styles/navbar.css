@@ -1,0 +1,238 @@
+/* =====================================================
+   NER-SAFE NAVBAR
+   ===================================================== */
+
+.dashboard-navbar {
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 26px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  background: rgba(5, 8, 10, 0.72);
+
+  backdrop-filter: blur(20px);
+}
+
+/* ---------- Search ---------- */
+
+.navbar-search {
+  width: min(420px, 45%);
+
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 11px;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: var(--color-text-muted);
+}
+
+.navbar-search input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: var(--color-text-primary);
+
+  font-size: 11px;
+}
+
+.navbar-search input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.search-shortcut {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 5px;
+
+  color: var(--color-text-muted);
+
+  font-size: 10px;
+}
+
+/* ---------- Actions ---------- */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.navbar-status {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 7px 10px;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 999px;
+
+  color: var(--color-text-muted);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+.navbar-status svg {
+  color: var(--color-success);
+}
+
+/* ---------- Icon buttons ---------- */
+
+.navbar-icon-button {
+  position: relative;
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: var(--color-text-secondary);
+
+  cursor: pointer;
+
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.navbar-icon-button:hover {
+  background: rgba(255, 255, 255, 0.06);
+
+  color: var(--color-accent);
+
+  border-color: rgba(101, 230, 165, 0.2);
+}
+
+.notification-dot {
+  position: absolute;
+
+  top: 7px;
+  right: 7px;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: var(--color-danger);
+}
+
+/* ---------- User ---------- */
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-left: 4px;
+
+  padding-left: 13px;
+
+  border-left: 1px solid var(--color-border);
+}
+
+.navbar-user-avatar {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 9px;
+
+  background: rgba(101, 230, 165, 0.06);
+
+  color: var(--color-accent);
+}
+
+.navbar-user-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.navbar-user-name {
+  color: var(--color-text-primary);
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.navbar-user-role {
+  color: var(--color-text-muted);
+
+  font-size: 8px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 700px) {
+  .dashboard-navbar {
+    padding: 0 15px;
+  }
+
+  .navbar-search {
+    width: 45%;
+  }
+
+  .navbar-status,
+  .navbar-user-info {
+    display: none;
+  }
+
+  .navbar-user {
+    padding-left: 5px;
+
+    border-left: none;
+  }
+}
