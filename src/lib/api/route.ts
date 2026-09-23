@@ -4,7 +4,6 @@ export interface RouteAnalysis {
   origin: string;
   destination: string;
 
-  // Route path returned by the backend
   path: string[];
 
   distance_km: number;
@@ -17,34 +16,11 @@ export interface RouteAnalysis {
   recommended_action: string;
 }
 
-interface BackendRouteResponse {
-  success: boolean;
-  route?: string[];
-
-  distance?: number;
-  time?: number;
-  risk?: number;
-
-  error?: string;
-}
-
-function getRiskLevel(risk: number): string {
-  if (risk >= 8) {
-    return "critical";
-  }
-
-  if (risk >= 4) {
-    return "watch";
-  }
-
-  return "stable";
-}
-
 export async function analyzeRoute(
   origin: string,
   destination: string
 ): Promise<RouteAnalysis> {
-  const data = await apiFetch<BackendRouteResponse>(
+  const data = await apiFetch<RouteAnalysis>(
     "/route/analyze",
     {
       method: "POST",
@@ -55,43 +31,5 @@ export async function analyzeRoute(
     }
   );
 
-  if (!data.success || !data.route) {
-    throw new Error(
-      data.error || "Unable to analyze route"
-    );
-  }
-
-  const distance = data.distance ?? 0;
-  const time = data.time ?? 0;
-  const risk = data.risk ?? 0;
-
-  const riskLevel = getRiskLevel(risk);
-
-  return {
-    origin,
-    destination,
-
-    path: data.route,
-
-    distance_km: distance,
-    estimated_minutes: time,
-
-    risk_level: riskLevel,
-
-    route_status:
-      riskLevel === "critical"
-        ? "High risk"
-        : riskLevel === "watch"
-        ? "Proceed with caution"
-        : "Route stable",
-
-    alternate_available: false,
-
-    recommended_action:
-      riskLevel === "critical"
-        ? "Consider an alternate route before departure."
-        : riskLevel === "watch"
-        ? "Proceed with caution and monitor route conditions."
-        : "Route is currently stable.",
-  };
+  return data;
 }
